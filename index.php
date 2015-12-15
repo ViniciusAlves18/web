@@ -13,34 +13,30 @@
 
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="public/css/style.css" />
-	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="js/jQuery.js" type="text/javascript" charset="utf-8" async defer></script>
+	
 </head>
 <body>
-	<form name="Registro" id="Registro" method="POST">
-		<input type="text" name="Login" id="Login" placeholder="Digite um login"/>
-		<input type="password" name="Password" id="Password" placeholder="Digite uma senha" />
-		<input type="text" name="Email" id="Email" placeholder="Digite um Email" />
-		<hr>
-		<select name="dia" id="dia">
-		<option disabled>Dia do Nascimento</option>
-		<?php for($i=1;$i<32;$i++) 
-			echo "<option value=\"$i\">$i</option>";
-		?>
-		</select>
-		<select name="mes" id="mes">
-		<option disabled>Mês do Nascimento</option>
-		<?php for($i=1;$i<13;$i++) 
-			echo "<option value=\"$i\">$i</option>";
-		?>
-		</select>
-		<select name="ano" id="ano">
-		<option disabled>Ano do Nascimento</option>
-		<?php for($i=1981;$i<date("Y");$i++) 
-			echo "<option value=\"$i\">$i</option>";
-		?>
-		</select>
-		<input type="button" id="button" class="btn" value="Aceito todos os Termos e me desejo me cadastrar!">
-	</form>
+	<!-- nav -->
+	<nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav">
+     	<li><a href="?cmd=home">Home</a></li>
+		<li><a href="?cmd=cadastro">Cadastro</a></li>
+		<li><a href="?cmd=donwloads">Donwloads</a></li>
+		<li><a href="/Forum">Forum</a></li>
+     </ul>
+     <form class="navbar-form navbar-right" role="search">
+       <div class="form-group">
+          <input type="text" class="form-control" placeholder="Digite seu login">
+          <input type="password" class="form-control" placeholder="Digite sua senha">
+       </div>
+      <input type="submit" class="btn btn-default btn-sm btn-danger" value="OK"/>
+     </form>
+     </nav>
+     <!-- nav -->
+	 <div class="banner"></div>
+
+
+	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/jQuery.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
