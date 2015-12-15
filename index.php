@@ -35,7 +35,36 @@
      <!-- nav -->
 	 <div class="banner"></div>
 
+	  <!-- container -->
+	  <div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>Ranking / Clã</h4>
+					<table class="table">
+						<tr>
+							<td><strong>#</strong></td>
+							<td><strong>Player</strong></td>
+							<td><strong>Rank</strong></td>
+						</tr>
+						<?php
+							for($i=1;$i<=5;$i++){
+							echo "<tr>
+								  <td>$i</td>
+								  <td>Vinicius</td>
+								  <td>52</td>
+								  </tr>";
+						}
+						?>
+						</table>
+				</div>
 
+				<div class="col-md-6">
+					<h4>Noticias</h4>
+				</div>
+
+			</div>
+	  </div>
+	  <!-- container -->
 	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/jQuery.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
