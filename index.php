@@ -10,6 +10,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Page Registre</title>
+
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="public/css/style.css" />
+	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/jQuery.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 	<form name="Registro" id="Registro" method="POST">
