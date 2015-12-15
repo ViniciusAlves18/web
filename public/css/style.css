@@ -1,3 +1,5 @@
+/* FONTS */
+
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
 
 *{
@@ -19,6 +21,14 @@ body{
 .navbar-inverse .nav li a:hover{
 	background: #000;
 }
+.navbar-inverse .navbar-form{
+	margin-right: 5px;
+}
+.navbar-inverse .navbar-form input{
+	height: 28px;
+	border-radius: 0px;
+	margin-left: -10px;
+}
 .banner{
 	height: 220px;
 }
@@ -39,7 +49,7 @@ body{
 	border-left: 2px solid #880c0c;
 	padding-left: 3px;
 }
-.container .form-inline input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"]{
 	width: 190px;
 	background: #080808;
 	border:1px solid #000;
@@ -64,4 +74,7 @@ body{
 	border:1px solid #000;
 	margin: 3px 10px;
 	padding:4px 10px;
+}
+.msg{
+	display: none;
 }
